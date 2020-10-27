@@ -171,3 +171,43 @@ def keyup(event):
 
 
 init()
+
+
+
+
+# while True:
+
+#     draw(window)
+
+#     for event in pygame.event.get():
+
+#         if event.type == KEYDOWN:
+#             keydown(event)
+#         elif event.type == KEYUP:
+#             keyup(event)
+#         elif event.type == QUIT:
+#             pygame.display.quit()
+#             pygame.quit()
+#             sys.exit()
+
+#     pygame.display.update()
+#     fps.tick(60)
+
+
+while True:
+
+    draw(window)
+
+    for event in pygame.event.get():
+
+        if event.type == KEYDOWN:
+            keydown(event)
+        elif event.type == KEYUP:
+            keyup(event)
+        elif event.type == QUIT:
+            pygame.display.quit()
+            pygame.quit()
+            sys.exit()
+
+    pygame.display.update()
+    fps.tick(60)
